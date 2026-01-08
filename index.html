@@ -2,10 +2,25 @@
 <html>
 <head>
   <title>AWS Architecture Referee</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <h1>AWS Architecture Referee</h1>
-  <p>Project setup in progress.</p>
+  <p>Helping students choose the right AWS architecture for hackathons and mini projects.</p>
+
+  <label>Project Type:</label>
+  <select id="projectType">
+    <option value="static">Static Website</option>
+    <option value="backend">Backend Application</option>
+    <option value="hackathon">Hackathon Demo</option>
+  </select>
+
+  <br><br>
+  <button onclick="showComparison()">Compare Architectures</button>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
